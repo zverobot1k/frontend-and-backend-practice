@@ -1,79 +1,96 @@
-/* Общие стили для всего сайта */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #f0f2f5; 
+    color: #333;
 }
 
-/* Хедер */
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #6a5acd 0%, #8a2be2 100%); 
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-/* Меню навигации */
 .nav {
-    text-align: center;
-    background-color: #222;
-    padding: 10px 0;
+    background: #333;
+    padding: 15px 0;
 }
 
 .nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .nav-item {
-    display: inline-block;
-    margin: 0 15px;
+    margin: 0;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav-link:hover {
+    color: #6a5acd; /* Изменение цвета при наведении */
     text-decoration: underline;
 }
 
-/* Основной блок */
 main {
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08); 
+    border-radius: 10px;
 }
 
 h2 {
     text-align: center;
     color: #333;
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
-/* Стиль для каждого раздела новости */
 section {
     background-color: white;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 25px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
 }
 
 section h2 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 section p {
     font-size: 16px;
     color: #555;
+    line-height: 1.8;
 }
 
 section p strong {
@@ -83,18 +100,28 @@ section p strong {
 section .date-author {
     font-size: 14px;
     color: #777;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    font-style: italic;
 }
 
-/* Адаптивность для маленьких экранов */
 @media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
     section {
-        padding: 15px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
     section {
-        padding: 10px;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 24px;
     }
 }
+
