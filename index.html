@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости</title>
-</head>
-<body>
-    <header>
-        <h1>Новости сайта</h1>
-        <p>Добро пожаловать на сайт, где вы узнаете самые свежие новости.</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="contact.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Заголовок новости 1</h2>
-            <p><strong>Дата:</strong> 22 сентября 2025 года | <strong>Автор:</strong> Иван Иванов</p>
-            <p>Текст новости 1: бла бла бла.</p>
-        </section>
-        <section>
-            <h2>Заголовок новости 2</h2>
-            <p><strong>Дата:</strong> 20 сентября 2025 года | <strong>Автор:</strong> Мария Смирнова</p>
-            <p>Текст новости 2: лалалаалал.</p>
-        </section>
-        <section>
-            <h2>Заголовок новости 3</h2>
-            <p><strong>Дата:</strong> 18 сентября 2025 года | <strong>Автор:</strong> Алексей Кузнецов</p>
-            <p>Текст новости 3: бимбимбамбам .</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Все права защищены.</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Семестровая работа</title>
+        <link rel="stylesheet" href="style/styles.css">
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="header">Хэдер</div>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="profile-header">
+                    <h1 class="profile-title">Информация об авторе</h1>
+                    <img class="profile-photo" src="images/2025-09-22 13.41.04.jpg" alt="Фото автора">
+                    <h2 class="profile-name">Блохин Максим Алексеевич</h2>
+                    <p class="profile-group">ЭФБО-16-24</p>
+                </div>
+                
+                <div class="about-me">
+                    <p>Обо мне: Я родился на цб. Я люблю носить модные вещи. В пять сказал свое первое слово.
+                    Потом школа. Учился хорошо. Учусь хорошо.</p>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-tag">Умею программировать</div>
+                    <div class="skill-tag">Стилист</div>
+                    <div class="skill-tag">Титан в доте</div>
+                    <div class="skill-tag">Быстро бегаю</div>
+                </div>
+                
+                <div class="experience-section">
+                    <h2 class="section-title">Мой опыт работы</h2>
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">Работал на складе в пятерочке. Устал.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Работал на сту. Писал биточки.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Работал дворником. Подметал.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">Все права защищены</div>    
+        </div>
+    </body>
 </html>
